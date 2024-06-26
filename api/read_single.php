@@ -7,7 +7,6 @@ header('Content-Type: application/json');
 include_once('../core/initialize.php');
 
 //instantiate post
-
 $post = new Post($db);
 
 $post->id = isset($_GET['id']) ? $_GET['id'] : die();
